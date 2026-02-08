@@ -2,7 +2,7 @@ const request = require('supertest')
 const app = require('./app')
 describe('GET routes', () => {
   test('GET /home', async () => {
-    const res = await request(app).get('/')
+    const res = await request(app).get('/home')
     expect(res.statusCode).toBe(200)
     expect(res.text).toBe('Home page')
   })
