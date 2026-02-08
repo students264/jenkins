@@ -13,4 +13,7 @@ app.get('/contact',(req,res)=>{
 app.get('/product',(req,res)=>{
      res.send('product page')
 })
+app.get('/send',(req,res)=>{
+     res.send('Hello')
+})
 module.exports = app
