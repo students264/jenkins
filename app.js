@@ -1,7 +1,7 @@
 const express=require('express')
 const app=express()
 const port=8000
-app.get('/home',(req,res)=>{
+app.get('/',(req,res)=>{
      res.send('Home page')
 })
 app.get('/about',(req,res)=>{
